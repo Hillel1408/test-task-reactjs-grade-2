@@ -46,7 +46,10 @@
     &-work {
         flex: 1 1 auto;
         background-color: #f8f8fb;
-        padding: 22px 13px 51px 42px;
+        &-container {
+            padding: 22px 13px 51px 42px;
+            max-width: 1668px;
+        }
         &__title {
             font-weight: 700;
             font-size: 16px;
