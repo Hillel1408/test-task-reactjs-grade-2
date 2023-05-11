@@ -47,8 +47,32 @@
         flex: 1 1 auto;
         background-color: #f8f8fb;
         &-container {
-            padding: 22px 13px 51px 42px;
+            padding: 22px 13px 0 42px;
             max-width: 1668px;
+        }
+        &__pagination {
+            button {
+                font-size: 13px;
+                line-height: 20 / 13 * 100%;
+                color: #74788d;
+                background-color: transparent;
+                height: 35px;
+                border: 1px solid #ced4da;
+                &:last-child {
+                    width: 68px;
+                    border-radius: 0px 4px 4px 0px;
+                    margin-left: -5px;
+                }
+                &:first-child {
+                    border-radius: 4px 0px 0px 4px;
+                    width: 80px;
+                }
+            }
+        }
+        &__count-items {
+            font-size: 13px;
+            line-height: 20 / 13 * 100%;
+            color: #495057;
         }
         &__title {
             font-weight: 700;
@@ -92,6 +116,7 @@
             line-height: 20 / 13 * 100%;
             color: #495057;
             border-collapse: collapse;
+            margin-bottom: 34px;
             thead {
                 tr {
                     td {
