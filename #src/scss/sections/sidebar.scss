@@ -1,12 +1,15 @@
 .sidebar {
     flex: 0 1 252 / 1920 * 100%;
     background: #2a3042;
-    min-width: 252px;
+    //min-width: 202px;
     min-height: 100%;
     &-block {
         padding: 101px 21px 21px 21px;
         width: 252px;
         margin-left: auto;
+        @media (max-width: 1920px) {
+            width: 100%;
+        }
     }
     &__title {
         font-weight: 600;

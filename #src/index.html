@@ -12,7 +12,11 @@
     </head>
     <body class="body">
         <main class="main">
-            @@include('./html/sidebar.html') @@include('./html/content.html')
+            <div class="main-wrapper">
+                @@include('./html/sidebar.html')
+                @@include('./html/content.html')
+            </div>
+            @@include('./html/footer.html')
         </main>
         <script src="js/script.js"></script>
     </body>

@@ -13,9 +13,12 @@ body.lock {
     overflow: hidden;
 }
 .main {
-    display: flex;
-    height: 100%;
+    min-height: 100%;
+    &-wrapper {
+        display: flex;
+    }
 }
 
 @import './sections/sidebar';
 @import './sections/content';
+@import './sections/footer';
