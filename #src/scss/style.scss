@@ -5,10 +5,17 @@ $minWidth: 1280;
 $maxWidth: 1920;
 $md1: 1280;
 
-$fontFamily: 'Geometria', sans-serif;
+$fontFamily: 'Poppins', sans-serif;
 
 @import 'null';
 
 body.lock {
     overflow: hidden;
 }
+.main {
+    display: flex;
+    height: 100%;
+}
+
+@import './sections/sidebar';
+@import './sections/content';

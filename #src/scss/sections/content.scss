@@ -1,0 +1,59 @@
+.content {
+    flex: 1 1 1668 / 1920 * 100%;
+    display: flex;
+    flex-direction: column;
+    &-head {
+        box-shadow: 0px 10px 20px rgba(18, 38, 63, 0.0313726);
+        &-container {
+            padding: 16px 16px 18px 16px;
+            max-width: 1668px;
+        }
+        &-user {
+            width: fit-content;
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            &__avatar {
+                width: 36px;
+                img {
+                    height: 36px;
+                    object-fit: cover;
+                }
+            }
+            &__text {
+                margin-left: 16px;
+            }
+            &__name {
+                font-size: 13px;
+                line-height: 20 / 13 * 100%;
+                color: #555b6d;
+            }
+            &__job-title {
+                font-size: 13px;
+                line-height: 20 / 13 * 100%;
+                color: #adb5bd;
+            }
+            &__btn {
+                background-color: transparent;
+                margin-left: 16px;
+                &:before {
+                    font-size: 16px;
+                    color: #555b6d;
+                }
+            }
+        }
+    }
+    &-work {
+        flex: 1 1 auto;
+        background-color: #f8f8fb;
+        padding: 22px 13px 51px 42px;
+        &__title {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24 / 16 * 100%;
+            text-transform: uppercase;
+            color: #495057;
+            margin-bottom: 31px;
+        }
+    }
+}

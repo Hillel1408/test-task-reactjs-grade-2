@@ -1,0 +1,35 @@
+.sidebar {
+    flex: 0 1 252 / 1920 * 100%;
+    background: #2a3042;
+    min-width: 252px;
+    min-height: 100%;
+    &-block {
+        padding: 101px 21px 21px 21px;
+        width: 252px;
+        margin-left: auto;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 16 / 11 * 100%;
+        text-transform: uppercase;
+        color: #6a7187;
+        margin-bottom: 22px;
+    }
+    &__list {
+        &-link {
+            font-size: 13px;
+            line-height: 20 / 13 * 100%;
+            color: #a6b0cf;
+            display: flex;
+            align-items: center;
+            gap: 13px;
+
+            &:before {
+                font-size: 17px;
+                color: #6a7187;
+                margin-bottom: 2px;
+            }
+        }
+    }
+}
