@@ -68,6 +68,7 @@
         grid-template-columns: 1fr 1fr;
         gap: 64px;
         padding: 37px 38px 42px 46px;
+        margin-bottom: 26px;
         label {
             font-weight: 500;
             font-size: 13px;
@@ -89,5 +90,28 @@
             flex-direction: column;
             gap: 12px;
         }
+    }
+    &-buttons {
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 248px;
+        margin-left: auto;
+    }
+    &__btn,
+    &__btn_close {
+        border-radius: 4px;
+        font-size: 13px;
+        line-height: 20 / 13 * 100%;
+        color: white;
+        height: 36px;
+    }
+    &__btn {
+        background: #556ee6;
+        width: 128px;
+    }
+    &__btn_close {
+        background: #74788d;
+        width: 102px;
     }
 }
