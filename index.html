@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>ReactJS grade-2</title>
+        <meta charset="UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="shortcut icon" href="favicon.ico" />
+        <!-- <meta name="robots" content="noindex, nofollow"> -->
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
+    <body class="body">
+        <main class="main">
+            <div class="main-wrapper">
+                <div class="sidebar">
+    <div class="sidebar-block">
+        <div class="sidebar__title">меню секретаря суда</div>
+        <ul class="sidebar__list">
+            <li class="sidebar__list-item">
+                <a class="sidebar__list-link icon-1" href="">Список дел</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+                <section class="content">
+    <div class="content-head">
+        <div class="content-head-container">
+            <div class="content-head-user">
+                <div class="content-head-user__avatar">
+                    <img src="img/img-1.jpg" alt="" />
+                </div>
+                <div class="content-head-user__text">
+                    <div class="content-head-user__name">
+                        Черкашина Марина Сергеевна
+                    </div>
+                    <div class="content-head-user__job-title">Секретарь</div>
+                </div>
+                <button class="content-head-user__btn icon-2"></button>
+            </div>
+        </div>
+    </div>
+    <div class="content-work">
+        <div class="content-work-container">
+            <div class="content-work-flex">
+                <div class="content-work__title">Дела</div>
+                <ul class="crumbs">
+                    <li class="crumbs__item">
+                        <a href="#" class="crumbs__item-link">Дела</a>
+                    </li>
+                    <li class="crumbs__item">
+                        <a href="#" class="crumbs__item-link active"
+                            >Создание</a
+                        >
+                    </li>
+                </ul>
+            </div>
+            <div class="content-work-block">
+                <div class="content-work-flex">
+                    <label class="content-work-label" for=""
+                        >Поиск по делам :<input type="text"
+                    /></label>
+                    <button class="content-work-btn open-modal">
+                        Создать дело
+                    </button>
+                </div>
+                <table class="content-work-items">
+                    <thead>
+                        <tr>
+                            <td>УИД</td>
+                            <td>№ дела</td>
+                            <td>Истец</td>
+                            <td>Ответчик</td>
+                            <td>Начато</td>
+                            <td>Окончено</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>31MS0041-01-2021-000604-52</td>
+                            <td>2-493/2021</td>
+                            <td>ООО «Вектор 555 Белгород»</td>
+                            <td>Черкашина Марина Евгеньевна</td>
+                            <td>25.11.2021</td>
+                            <td>26.11.2021</td>
+                            <td>
+                                <button
+                                    class="icon-3 content-work-items__btn"
+                                ></button>
+                            </td>
+                            <td>
+                                <button class="content-work-items__open-btn">
+                                    Открыть дело
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="content-work-flex">
+                    <p class="content-work__count-items">
+                        Показано от 1 до 10 из 493 дел
+                    </p>
+                    <div class="content-work__pagination">
+                        <button>Назад</button>
+                        <ul>
+                            <li class="active">1</li>
+                            <li>2</li>
+                        </ul>
+                        <button>Далее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </div>
+            <footer class="footer"><p>2021 © Lexicom</p></footer>
+ <div class="popup">
+    <div class="popup-body">
+        <div class="popup-content">
+            <span class="popup__close icon-4"></span>
+            <div class="popup-head">Создать дело</div>
+            <div class="popup-grid">
+                <div>
+                    <div class="popup-grid-item" style="margin-bottom: 38px">
+                        <label
+                            >УИД<input
+                                placeholder="31MS0041-01-2021-000604-52"
+                                type="text"
+                        /></label>
+                        <label
+                            >Номер<input placeholder="2-493/2021" type="text"
+                        /></label>
+                    </div>
+                    <div class="popup-grid-item">
+                        <label
+                            >Фамилия<input placeholder="Иванова" type="text"
+                        /></label>
+                        <label
+                            >Имя<input placeholder="Марина" type="text"
+                        /></label>
+                        <label
+                            >Отчество<input placeholder="Ивановна" type="text"
+                        /></label>
+                        <label
+                            >Дата рождения<input
+                                placeholder="25.11.1988"
+                                type="text"
+                        /></label>
+                        <label
+                            >Адрес регистрации<input
+                                placeholder="г. Белгород, ул. Радости,  5-21"
+                                type="text"
+                        /></label>
+                        <label
+                            >Адрес проживания<input
+                                placeholder="г. Белгород, ул. Радости,  5-21"
+                                type="text"
+                        /></label>
+                        <label
+                            >Номер телефона<input
+                                placeholder="+ 7 000 000 0000"
+                                type="text"
+                        /></label>
+                    </div>
+                </div>
+                <div>
+                    <div class="popup-grid-item" style="margin-bottom: 90px">
+                        <label
+                            >Дата<input placeholder="25.11.2021" type="text"
+                        /></label>
+                    </div>
+                    <div class="popup-grid-item" style="margin-bottom: 16px">
+                        <label
+                            >ИНН<input placeholder="123456789123" type="text"
+                        /></label>
+                        <label
+                            >ОГРН<input placeholder="123400" type="text"
+                        /></label>
+                        <label
+                            >Название компании<input
+                                placeholder="Название компании"
+                                type="text"
+                        /></label>
+                        <label
+                            >Юридический адрес<input
+                                placeholder="г. Белгород, ул. Радости,  5-21"
+                                type="text"
+                        /></label>
+                    </div>
+                    <div class="popup-grid-item">
+                        <label
+                            >Почтовый адрес<input
+                                placeholder="г. Белгород, ул. Радости,  5-21"
+                                type="text"
+                        /></label>
+                        <label
+                            >КПП<input placeholder="000000000" type="text"
+                        /></label>
+                        <label
+                            >Р/c<input
+                                placeholder="10318810007009063768"
+                                type="text"
+                        /></label>
+                        <label
+                            >Банк<input
+                                placeholder="БЕЛГОРОДСКОЕ ОТДЕЛЕНИЕ N8592..."
+                                type="text"
+                        /></label>
+                        <label
+                            >БИК<input placeholder="0890009083" type="text"
+                        /></label>
+                        <label
+                            >К/c<input
+                                placeholder="10318810007009063768"
+                                type="text"
+                        /></label>
+                    </div>
+                    <div class="popup-buttons">
+                        <button class="popup__btn_close">Отмена</button>
+                        <button class="popup__btn">Создать</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
